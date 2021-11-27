@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Agpaypal_payment_integration</groupId>
+  <artifactId>Agpaypal_payment_integration</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>AG_paypal_integ</name>
+  <description>This simple project integrates paypal payment in java web app
+</description>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/rest-api-sdk -->
+	<dependency>
+	    <groupId>com.paypal.sdk</groupId>
+	    <artifactId>rest-api-sdk</artifactId>
+	    <version>1.14.0</version>
+	</dependency>
+		
+	</dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>16</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
